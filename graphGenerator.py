@@ -46,9 +46,6 @@ class graphGenerator:
 
 
     def emailGraph(self):
-        #source_email = 'aleconga@yahoo.com'
-        #email_password = 'okgoyloqgmvypgdi'
-        #self.destinationEmail = 'alejandroconga@gmail.com'
         subject = 'SensorDB graph'
         msg = MIMEMultipart()
         msg['From'] = config.source_email
