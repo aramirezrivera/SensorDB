@@ -28,4 +28,4 @@
 
 ## **3 Low-Level Design**
 
-![uml_diagram.png](images/uml_diagram.png)
+![SensorDB.jpeg](images/SensorDB.jpeg)
