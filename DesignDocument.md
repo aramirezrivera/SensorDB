@@ -1,5 +1,3 @@
-
-=======
 # Design Document
 
 **Author**: aramirezrivera
