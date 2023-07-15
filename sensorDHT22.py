@@ -21,7 +21,7 @@ class sensorDHT22:
         sensor_type = Adafruit_DHT.DHT22
         temp, humi = self.read()
         timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
-        conn = psycopg2.connect(host='localhost', user='pi', password='noletengasmiedo', database='sensordb')
+        conn = psycopg2.connect(host=config.host, user=config.user, password=config.password, database='sensordb')
         cursor = conn.cursor()
         cursor.execute('INSERT INTO sensordb.sensor_data (timestamp, humidity, temperature) VALUES (%s, %s, %s)', (timestamp, humi, temp))
         conn.commit()

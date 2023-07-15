@@ -6,20 +6,18 @@ import config
 
 def sensor1_thread():
     sensorInside1 = sensorDHT22.sensorDHT22(4)
-
     while True:
-        # Store Inside sensor1 data in the sql database
-        #sensorInside1.write()
+        # Store sensor1 data in the sql database
+        sensorInside1.write()
         # Sleep for 30 minutes
         time.sleep(1800)
 def graph_thread():
     grapher = graphGenerator.graphGenerator(config.destination_email)
     while True:
-        #print("This is the
+        #Send an email with the graph daily
         grapher.createGraph()
         grapher.emailGraph()
-        time.sleep(30)
-        #time.sleep(86400)
+        time.sleep(86400)
      
 if __name__ =="__main__":
 
