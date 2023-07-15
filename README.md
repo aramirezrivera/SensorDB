@@ -1,7 +1,5 @@
 # Design Document
 
-**Author**: aramirezrivera
-
 ## **Version**
 
 | Version | Changes           |
@@ -18,7 +16,7 @@
 
 - The code will be organized using the OOP paradigm.
 - The SQL database is installed and running locally on the raspberry pi.
-- The execution of the main class will be run as a service in the Linux os.
+- The execution of the main class will run as a service in the Linux os.
 
 ### **2.3 System Environment**
 
