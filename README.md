@@ -2,8 +2,6 @@
 =======
 # Design Document
 
-**Author**: aramirezrivera
-
 ## **Version**
 
 | Version | Changes           |
