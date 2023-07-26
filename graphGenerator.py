@@ -19,7 +19,7 @@ class graphGenerator:
         # Connect to the PostgreSQL database
         conn = psycopg2.connect(host=config.host, user=config.user, password=config.password, database='sensordb')
         cursor = conn.cursor()
-        query = "SELECT timestamp, temperature, humidity FROM sensordb.sensor_data"
+        query = "SELECT timestamp, temperature, humidity FROM sensordb.sensor_data WHERE timestamp >= CURRENT_DATE - INTERVAL '1 month'"
         cursor.execute(query)
         data = cursor.fetchall()
 

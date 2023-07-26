@@ -1,6 +1,7 @@
 import Adafruit_DHT
 import time
 import psycopg2
+import config
 
 class sensorDHT22:
 
